@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客 - 你的名字</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">你的名字</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">关于我</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">项目</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link active">博客</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">联系</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>我的博客</h1>
+                <p>分享技术见解、学习心得和生活感悟</p>
+            </div>
+
+            <div class="blog-content">
+                <div class="blog-posts">
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="https://via.placeholder.com/600x300" alt="React最佳实践">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date"><i class="fas fa-calendar"></i> 2024年1月15日</span>
+                                <span class="post-category"><i class="fas fa-tag"></i> React</span>
+                                <span class="post-read-time"><i class="fas fa-clock"></i> 5分钟阅读</span>
+                            </div>
+                            <h2><a href="blog-post-1.html">React 18新特性深度解析</a></h2>
+                            <p>React 18带来了许多令人兴奋的新特性，包括并发渲染、自动批处理、新的Hooks等。本文将深入探讨这些新特性如何改善我们的开发体验...</p>
+                            <a href="blog-post-1.html" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="https://via.placeholder.com/600x300" alt="Node.js性能优化">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date"><i class="fas fa-calendar"></i> 2024年1月10日</span>
+                                <span class="post-category"><i class="fas fa-tag"></i> Node.js</span>
+                                <span class="post-read-time"><i class="fas fa-clock"></i> 8分钟阅读</span>
+                            </div>
+                            <h2><a href="blog-post-2.html">Node.js应用性能优化实战指南</a></h2>
+                            <p>性能优化是每个Node.js开发者都需要掌握的技能。本文将从内存管理、异步处理、数据库优化等多个角度，分享实用的优化技巧...</p>
+                            <a href="blog-post-2.html" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="https://via.placeholder.com/600x300" alt="前端工程化">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date"><i class="fas fa-calendar"></i> 2024年1月5日</span>
+                                <span class="post-category"><i class="fas fa-tag"></i> 工程化</span>
+                                <span class="post-read-time"><i class="fas fa-clock"></i> 6分钟阅读</span>
+                            </div>
+                            <h2><a href="blog-post-3.html">现代前端工程化最佳实践</a></h2>
+                            <p>随着前端项目复杂度的增加，工程化变得越来越重要。本文将介绍如何构建一个现代化的前端工程化体系，包括构建工具、代码规范、自动化测试等...</p>
+                            <a href="blog-post-3.html" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>分类</h3>
+                        <ul class="categories">
+                            <li><a href="#">React <span>(5)</span></a></li>
+                            <li><a href="#">Node.js <span>(3)</span></a></li>
+                            <li><a href="#">JavaScript <span>(8)</span></a></li>
+                            <li><a href="#">工程化 <span>(4)</span></a></li>
+                            <li><a href="#">生活感悟 <span>(2)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>最新文章</h3>
+                        <ul class="recent-posts">
+                            <li>
+                                <a href="#">React 18新特性深度解析</a>
+                                <span>2024年1月15日</span>
+                            </li>
+                            <li>
+                                <a href="#">Node.js应用性能优化实战指南</a>
+                                <span>2024年1月10日</span>
+                            </li>
+                            <li>
+                                <a href="#">现代前端工程化最佳实践</a>
+                                <span>2024年1月5日</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>标签云</h3>
+                        <div class="tag-cloud">
+                            <a href="#" class="tag">React</a>
+                            <a href="#" class="tag">JavaScript</a>
+                            <a href="#" class="tag">Node.js</a>
+                            <a href="#" class="tag">TypeScript</a>
+                            <a href="#" class="tag">Vue.js</a>
+                            <a href="#" class="tag">CSS</a>
+                            <a href="#" class="tag">HTML</a>
+                            <a href="#" class="tag">Webpack</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +86 138 0000 0000</p>
+                </div>
+                <div class="footer-section">
+                    <h3>社交媒体</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="about.html">关于我</a></li>
+                        <li><a href="projects.html">项目</a></li>
+                        <li><a href="blog.html">博客</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 你的名字. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
