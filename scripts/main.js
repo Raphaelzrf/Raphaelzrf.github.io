@@ -1,19 +1,33 @@
-// 移动端导航菜单
-const hamburger = document.querySelector(".hamburger")
-const navMenu = document.querySelector(".nav-menu")
+// 1. 定义初始化函数
+async function init() {
+  try {
+    // 加载导航栏
+    const response = await fetch("./shared/navbar.html");
+    const html = await response.text();
+    document.getElementById("navbar").innerHTML = html;
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active")
-  navMenu.classList.toggle("active")
-})
+    // 高亮当前链接
+    const currentPath = window.location.pathname.split("/").pop();
+    document.querySelectorAll(".nav-link").forEach(link => {
+      if (link.getAttribute("href") === currentPath) {
+        link.classList.add("active");
+      }
+    });
+  } catch (error) {
+    console.error("初始化失败:", error);
+  }
+  try {
+    // 加载页脚
+    const footerResponse = await fetch("./shared/footer.html");
+    const footerHtml = await footerResponse.text();
+    document.getElementById("footer").innerHTML = footerHtml;
+  } catch (error) {
+    console.error("页脚加载失败:", error);
+  }
+}
 
-// 点击导航链接时关闭移动端菜单
-document.querySelectorAll(".nav-link").forEach((n) =>
-  n.addEventListener("click", () => {
-    hamburger.classList.remove("active")
-    navMenu.classList.remove("active")
-  }),
-)
+// 2. 执行初始化函数
+init();
 
 // 平滑滚动
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

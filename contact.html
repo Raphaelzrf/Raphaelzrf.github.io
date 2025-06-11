@@ -3,41 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>联系我 - 你的名字</title>
+    <title>联系我 - Raphael</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">你的名字</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">首页</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">关于我</a>
-                </li>
-                <li class="nav-item">
-                    <a href="projects.html" class="nav-link">项目</a>
-                </li>
-                <li class="nav-item">
-                    <a href="blog.html" class="nav-link">博客</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link active">联系</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar"></div>
 
     <main class="page-content">
         <div class="container">
@@ -54,28 +26,28 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h3>邮箱</h3>
-                                <p>your.email@example.com</p>
+                                <p>zrf2001@mail.ustc.edu.cn</p>
                             </div>
                         </div>
-                        <div class="contact-method">
+                        <!-- <div class="contact-method">
                             <i class="fas fa-phone"></i>
                             <div>
                                 <h3>电话</h3>
                                 <p>+86 138 0000 0000</p>
                             </div>
-                        </div>
-                        <div class="contact-method">
+                        </div> -->
+                        <!-- <div class="contact-method">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h3>位置</h3>
                                 <p>中国，北京</p>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="contact-method">
                             <i class="fab fa-github"></i>
                             <div>
                                 <h3>GitHub</h3>
-                                <p>github.com/yourusername</p>
+                                <p>github.com/Raphaelzrf</p>
                             </div>
                         </div>
                     </div>
@@ -83,22 +55,26 @@
                     <div class="social-contact">
                         <h3>社交媒体</h3>
                         <div class="social-links">
-                            <a href="#" class="social-link">
+                            <a href="https://github.com/Raphaelzrf" class="social-link">
                                 <i class="fab fa-github"></i>
                                 <span>GitHub</span>
                             </a>
-                            <a href="#" class="social-link">
+                            <a href="https://t.me/Raphaelzrf" class="social-link">
+                                <i class="fab fa-telegram"></i>
+                                <span>Telegram</span>
+                            </a>
+                            <!-- <a href="#" class="social-link">
                                 <i class="fab fa-linkedin"></i>
                                 <span>LinkedIn</span>
-                            </a>
-                            <a href="#" class="social-link">
+                            </a> -->
+                            <!-- <a href="#" class="social-link">
                                 <i class="fab fa-twitter"></i>
                                 <span>Twitter</span>
                             </a>
                             <a href="#" class="social-link">
                                 <i class="fab fa-weixin"></i>
                                 <span>微信</span>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -132,38 +108,11 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>联系方式</h3>
-                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
-                    <p><i class="fas fa-phone"></i> +86 138 0000 0000</p>
-                </div>
-                <div class="footer-section">
-                    <h3>社交媒体</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>快速链接</h3>
-                    <ul>
-                        <li><a href="about.html">关于我</a></li>
-                        <li><a href="projects.html">项目</a></li>
-                        <li><a href="blog.html">博客</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 你的名字. 保留所有权利.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- 页脚 -->
+    <div id="footer"></div>
 
     <script src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="scripts/contact.js"></script>
 </body>
 </html>

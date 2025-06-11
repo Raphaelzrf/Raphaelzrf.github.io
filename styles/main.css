@@ -11,6 +11,8 @@ body {
   color: #333;
 }
 
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -912,4 +914,33 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+
+.qr-container {
+  position: relative;
+  display: inline-block;
+}
+
+.qr-tooltip {
+  display: none;
+  position: absolute;
+  top: 120%; /* 控制二维码显示在图标下方 */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.qr-container:hover .qr-tooltip {
+  display: block;
+}
+
+.qr-tooltip img {
+  width: 120px;  /* 可根据实际调整 */
+  height: 120px;
 }

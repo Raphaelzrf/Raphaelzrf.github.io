@@ -3,41 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>你的名字 - 首页</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Raphael - 首页</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">你的名字</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link active">首页</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">关于我</a>
-                </li>
-                <li class="nav-item">
-                    <a href="projects.html" class="nav-link">项目</a>
-                </li>
-                <li class="nav-item">
-                    <a href="blog.html" class="nav-link">博客</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">联系</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar"></div>
 
     <!-- 主页内容 -->
     <main>
@@ -45,11 +17,10 @@
         <section class="hero">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">你好，我是 <span class="highlight">你的名字</span></h1>
-                    <p class="hero-subtitle">全栈开发工程师 & 创新者</p>
+                    <h1 class="hero-title">你好，我是 <span class="highlight">Raphael</span></h1>
+                    <p class="hero-subtitle"></p>
                     <p class="hero-description">
-                        我专注于创建优雅、高效的Web应用程序，热爱学习新技术，
-                        享受解决复杂问题的过程。
+                        我是中国科学技术大学计算机科学与技术学院硕士一年级学生。
                     </p>
                     <div class="hero-buttons">
                         <a href="projects.html" class="btn btn-primary">查看项目</a>
@@ -57,7 +28,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="https://via.placeholder.com/400x400" alt="个人头像" class="profile-img">
+                    <img src="./images/logo.jpg" alt="个人头像" class="profile-img">
                 </div>
             </div>
         </section>
@@ -70,28 +41,43 @@
                     <div class="skill-card">
                         <i class="fas fa-code skill-icon"></i>
                         <h3>前端开发</h3>
-                        <p>React, Vue.js, JavaScript, TypeScript</p>
+                        <p>React, JavaScript</p>
                     </div>
                     <div class="skill-card">
                         <i class="fas fa-server skill-icon"></i>
                         <h3>后端开发</h3>
-                        <p>Node.js, Python, Express, Django</p>
+                        <p>Node.js, Python, Express</p>
                     </div>
                     <div class="skill-card">
+                        <i class="fas fa-spider skill-icon"></i>
+                        <h3>爬虫</h3>
+                        <p>Scrapy, Appium</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-android skill-icon"></i>
+                        <h3>Android应用开发</h3>
+                        <p>Kotlin, Java, accessibility service</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-file-lines skill-icon"></i>
+                        <h3>NLP</h3>
+                        <p>Bert, In-Context Learning</p>
+                    </div>
+                    <!-- <div class="skill-card">
                         <i class="fas fa-database skill-icon"></i>
                         <h3>数据库</h3>
                         <p>MySQL, MongoDB, PostgreSQL</p>
-                    </div>
-                    <div class="skill-card">
+                    </div> -->
+                    <!-- <div class="skill-card">
                         <i class="fas fa-cloud skill-icon"></i>
                         <h3>云服务</h3>
                         <p>AWS, Docker, Kubernetes</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
 
-        <!-- 最新项目 -->
+        <!-- 最新项目
         <section class="latest-projects">
             <div class="container">
                 <h2 class="section-title">最新项目</h2>
@@ -127,41 +113,11 @@
                     <a href="projects.html" class="btn btn-outline">查看所有项目</a>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- 页脚 -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>联系方式</h3>
-                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
-                    <p><i class="fas fa-phone"></i> +86 138 0000 0000</p>
-                </div>
-                <div class="footer-section">
-                    <h3>社交媒体</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>快速链接</h3>
-                    <ul>
-                        <li><a href="about.html">关于我</a></li>
-                        <li><a href="projects.html">项目</a></li>
-                        <li><a href="blog.html">博客</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 你的名字. 保留所有权利.</p>
-            </div>
-        </div>
-    </footer>
-
+    <div id="footer"></div>
     <script src="scripts/main.js"></script>
 </body>
 </html>

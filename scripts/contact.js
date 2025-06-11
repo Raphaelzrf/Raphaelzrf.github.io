@@ -37,13 +37,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
       submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 发送中...'
       submitButton.disabled = true
-
-      setTimeout(() => {
-        alert("消息发送成功！我会尽快回复您。")
-        this.reset()
-        submitButton.innerHTML = originalText
-        submitButton.disabled = false
-      }, 2000)
+      emailjs.init("ptTMmq-1CI-2m1bFg")
+      emailjs.send("service_ysp2b0p", "template_goh3lds", data)
+        .then(() => {
+          alert("消息发送成功！我会尽快回复您。")
+          contactForm.reset()
+        })
+        .catch((error) => {
+          console.error("发送失败：", error)
+          alert("发送失败，请稍后再试。")
+        })
+        .finally(() => {
+          submitButton.innerHTML = originalText
+          submitButton.disabled = false
+        })
     })
   }
 
