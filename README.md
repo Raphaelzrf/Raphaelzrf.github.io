@@ -1,4 +1,4 @@
-# 👋 你好，我是 [你的名字]
+<!-- # 👋 你好，我是 [你的名字]
 
 ## 🚀 关于我
 - 🔭 我目前正在开发 **[你的项目名称]**
@@ -82,4 +82,4 @@
 
 ⭐️ 如果你觉得我的项目有用，请给个star！
 
-![访问者计数](https://visitor-badge.laobi.icu/badge?page_id=你的用户名.你的用户名)
+![访问者计数](https://visitor-badge.laobi.icu/badge?page_id=你的用户名.你的用户名) -->
